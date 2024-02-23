@@ -39,10 +39,10 @@ function App() {
 
   return (
     <>
-    <div style={{height: "200px", width: "200px", border: "5px solid black", display: "flex", flexDirection: "column", padding: "20px", justifyContent: 'center', alignItems: "center", rowGap: "10px", backgroundColor: "pink", borderRadius: "10px"}}>
+    <div >
       <h1>Stopwatch</h1>
       <p>Time: {formatTime(elapsedTime)}</p>
-      <button onClick={handleStartStop}>{isRunning ? "stop" : "start"}</button>
+      <button onClick={handleStartStop}>{isRunning ? "Stop" : "Start"}</button>
       <button onClick={handleReset}>Reset</button>
     </div>
     </>
